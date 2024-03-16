@@ -19,6 +19,6 @@ notes.forEach(function(note,index){
 console.log(`We have ${notes.length} notes`)
 console.log(notes)
 
-for(let count =0;count<notes.length;count++){
-    console.log(notes[count])
-}
+// for(let count =0;count<notes.length;count++){
+//     console.log(notes[count])
+// }
