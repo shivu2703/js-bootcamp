@@ -1,9 +1,9 @@
 // undefined for variable
 
-let name = 'jen'
+let name
 
 if(name === undefined){
-    console.log('Please provide a name')
+    console.log('Please provide a name')  // name was not defined 
 } else{
     console.log(name)
 }
