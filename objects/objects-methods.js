@@ -1,4 +1,4 @@
-// method is nothing but as a object property whose value is a function
+// method is nothing but a object property whose value is a function
 
 let restuarant = {
     name: 'chai sqaure',
