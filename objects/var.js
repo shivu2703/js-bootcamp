@@ -24,4 +24,9 @@ var age // see the explanation in below comments
 
 // var age
 // console.log(age)
-// age =10
+// age =10  
+
+
+// you can create same variable twice with var
+// var is function scoped not block scoped
+// hoisting happens in var based variables 
