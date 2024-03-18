@@ -17,7 +17,7 @@ console.log(password.includes('password'))
 //trim method
 console.log(name.trim())
 
-//challenge area
+//challenge area  
 
 let isValidPassword = function(password){
     return password.length>8 && (!password.includes('password'))
