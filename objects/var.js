@@ -22,7 +22,7 @@ age =10
 console.log(age) // hoisting is happening here
 var age // see the explanation in below comments
 
-// var age
+// var age  
 // console.log(age)
 // age =10  
 
