@@ -10,7 +10,7 @@ console.log(notes.length)
 // notes.unshift('Note 1')
 
 //splice- we use add and remove elemet at the same time 
-// (index from where you want to delete , how many element you want to delete, element you want to add at the given index)
+// (index from where you want to delete, how many element you want to delete, element you want to add at the given index)
 // notes.splice(2,0,'hi')
 
 notes.forEach(function(note,index){
