@@ -13,17 +13,17 @@ console.log(notes.length)
 // (index from where you want to delete, how many element you want to delete, element you want to add at the given index)
 // notes.splice(2,0,'hi')
 
-const name=['shivangi','katiyar']
+// const name=['shivangi','katiyar']
 
-name.forEach(function(elem,index){
-  console.log(`${index+1}. ${elem}`)
-})
-// notes.forEach(function(note,index){
-//   console.log(index)
-//   console.log(note)
+// name.forEach(function(elem,index){
+//   console.log(`${index+1}. ${elem}`)
 // })
-// console.log(`We have ${notes.length} notes`)
-// console.log(notes)
+notes.forEach(function(note,index){
+  console.log(index)
+  console.log(note)
+})
+console.log(`We have ${notes.length} notes`)
+console.log(notes)
 
 // for(let count =0;count<notes.length;count++){
 //     console.log(notes[count])

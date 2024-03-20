@@ -17,7 +17,7 @@ todos.forEach(function(todo,index){
 //     console.log(i)
 // }
 
-for ( let count =0 ;count<todos.length;count++){
-    console.log(`${count +1}. ${todos[count]}`)
-}
+// for ( let count =0 ;count<todos.length;count++){
+//     console.log(`${count +1}. ${todos[count]}`)
+// }
 
