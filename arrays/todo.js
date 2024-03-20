@@ -13,9 +13,9 @@ todos.forEach(function(todo,index){
 // console.log(`You have ${todos.length} todos`)
 // console.log(todos)  
 
-for(let i=0;i<3;i++){
-    console.log(i)
-}
+// for(let i=0;i<3;i++){
+//     console.log(i)
+// }
 
 for ( let count =0 ;count<todos.length;count++){
     console.log(`${count +1}. ${todos[count]}`)
