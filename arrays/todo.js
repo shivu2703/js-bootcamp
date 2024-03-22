@@ -26,5 +26,15 @@ const deleteTodo = function(todos,todoText){
       }
 }
 
-deleteTodo(todos,'do skin care')
-console.log(todos)
+const getThingsToDo = function(todos){
+    const filtererdTodos= todos.filter(function(todo){
+        return !todo.completed
+    })
+    return filtererdTodos
+}
+
+
+console.log(getThingsToDo(todos))
+
+// deleteTodo(todos,'do skin care')
+// console.log(todos)
