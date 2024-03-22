@@ -28,3 +28,10 @@ notes.forEach(function(note,index){
   // for(let count =0;count<notes.length;count++){
   //     console.log(notes[count])
   // }
+
+  // const index= notes.findIndex(function(note,index){
+//     console.log(note)
+//     return note.title === 'habbits to work on'
+// })
+
+// console.log(index)

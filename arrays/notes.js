@@ -10,18 +10,20 @@ const notes=[{
 }]
 
 const findNote=function(notes,noteTitle){
-    const index=notes.findIndex(function(note,index){
+    const note=notes.find(function(note,index){
       return note.title.toLowerCase() === noteTitle.toLowerCase()
     })
-  return notes[index]
+  return note
 }
+
+// const findNote=function(notes,noteTitle){
+//   const index=notes.findIndex(function(note,index){
+//     return note.title.toLowerCase() === noteTitle.toLowerCase()
+//   })
+// return notes[index]
+// }
 
 const note= findNote(notes,'Habbits to work on')
 console.log(note)
-// const index= notes.findIndex(function(note,index){
-//     console.log(note)
-//     return note.title === 'habbits to work on'
-// })
 
-// console.log(index)
 
