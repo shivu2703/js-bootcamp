@@ -16,6 +16,15 @@ const findNote=function(notes,noteTitle){
   return note
 }
 
+const findNotes = function(notes,query){
+  const filtererdNotes = notes.filter(function(note,index){
+    const isTitleMatched= note.title.toLowerCase().includes(query.toLowerCase())
+    const isBodyMatched= note.body.toLowerCase().includes(query.toLowerCase())
+    return isBodyMatched || isTitleMatched
+  })
+  return filtererdNotes
+}
+
 // const findNote=function(notes,noteTitle){
 //   const index=notes.findIndex(function(note,index){
 //     return note.title.toLowerCase() === noteTitle.toLowerCase()
@@ -23,7 +32,7 @@ const findNote=function(notes,noteTitle){
 // return notes[index]
 // }
 
-const note= findNote(notes,'Habbits to work on')
+const note= findNotes(notes,'trip')
 console.log(note)
 
 
