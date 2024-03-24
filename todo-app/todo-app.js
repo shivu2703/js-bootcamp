@@ -42,3 +42,7 @@ todos.forEach(function(todo){
 //         todo.remove()
 //     }
 // })
+
+document.querySelector('button').addEventListener('click',function(e){
+    console.log('adding new todo')
+})
