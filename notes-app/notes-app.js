@@ -1,1 +1,2 @@
-console.log('This is from a different file!!')
+const p=document.querySelector('h1')
+p.remove()
