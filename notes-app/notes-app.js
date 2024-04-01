@@ -14,8 +14,12 @@ document.querySelector('#create-note').addEventListener('click',function(e){
 })
 
 document.querySelector('#remove-all').addEventListener('click',function(e){
-    e.target.textContent='Deleted all notes!!'
+    document.querySelectorAll('.note').forEach(function(note){
+        note.remove()
+    })
 })
+
+
 // document.querySelector('button').addEventListener('click',function(e){
 //     e.target.textContent='The button was clicked'  
 
