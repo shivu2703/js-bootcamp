@@ -52,12 +52,22 @@ document.querySelector('#search-text').addEventListener('input',function(e){
     renderedTodos(todos,filters)
 })
 
-//listen for new todo-creation
-document.querySelector('#add-todo').addEventListener('click',function(e){
-    console.log('adding new todo')
+document.querySelector('#new-todo').addEventListener('submit',function(e){
+    e.preventDefault()
+    todos.push({
+        text:e.target.elements.text.value,
+        completed: false
+    })
+    renderedTodos(todos,filters)
+    e.target.elements.text.value=''
 })
 
-//listen for todo text change
-document.querySelector('#new-todo-text').addEventListener('input',function(e){
-    console.log(e.target.value)
-})
+// //listen for new todo-creation
+// document.querySelector('#add-todo').addEventListener('click',function(e){
+//     console.log('adding new todo')
+// })
+
+// //listen for todo text change
+// document.querySelector('#new-todo-text').addEventListener('input',function(e){
+//     console.log(e.target.value)
+// })
