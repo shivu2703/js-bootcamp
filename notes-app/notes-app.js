@@ -19,6 +19,10 @@ document.querySelector('#remove-all').addEventListener('click',function(e){
     })
 })
 
+document.querySelector('#search-text').addEventListener('change',function(e){
+    console.log(e.target.value)
+})
+
 
 // document.querySelector('button').addEventListener('click',function(e){
 //     e.target.textContent='The button was clicked'  
