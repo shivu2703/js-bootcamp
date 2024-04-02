@@ -16,16 +16,19 @@ const todos = [{
 }]
 
 const filters={
-    searchText:''
+    searchText:'',
+    hideCompleted:false
 }
 
 
 
 const renderedTodos= function(todos,filters){
     const filteredTodos= todos.filter(function(todo){
-        return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+        const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+        const hideCompletedMatch= !filters.hideCompleted || !todo.completed
+        return searchTextMatch && hideCompletedMatch
     })
-    
+
     document.querySelector('#todos').innerHTML=''
  
     let count=0
@@ -60,6 +63,11 @@ document.querySelector('#new-todo').addEventListener('submit',function(e){
     })
     renderedTodos(todos,filters)
     e.target.elements.text.value=''
+})
+
+document.querySelector('#hide-completed').addEventListener('change',function(e){
+      filters.hideCompleted=e.target.checked
+      renderedTodos(todos,filters)
 })
 
 // //listen for new todo-creation
