@@ -15,22 +15,48 @@ const todos = [{
     completed:true
 }]
 
-let count=0
-todos.forEach(function(todo){
-    if(todo.completed ===  false){
-        count++
-    }
+const filters={
+    searchText:''
+}
+
+
+
+const renderedTodos= function(todos,filters){
+    const filteredTodos= todos.filter(function(todo){
+        return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+    })
+    
+    document.querySelector('#todos').innerHTML=''
+ 
+    let count=0
+    filteredTodos.forEach(function(todo){
+        if(todo.completed ===  false){
+            count++
+        }
+    })
+
+    const paragraphTodoLeft=document.createElement('h2')
+    paragraphTodoLeft.textContent=`You have ${count} todos left!`
+    document.querySelector('#todos').appendChild(paragraphTodoLeft)
+    
+    filteredTodos.forEach(function(todo){
+        const todoEl=document.createElement('p')
+        todoEl.textContent=todo.text
+        document.querySelector('#todos').appendChild(todoEl)
+    })
+}
+
+renderedTodos(todos,filters)
+document.querySelector('#search-text').addEventListener('input',function(e){
+    filters.searchText=e.target.value
+    renderedTodos(todos,filters)
 })
 
-const paragraphTodoLeft=document.createElement('h2')
-paragraphTodoLeft.textContent=`You have ${count} todos left!`
-document.querySelector('body').appendChild(paragraphTodoLeft)
-
-todos.forEach(function(todo){
-    const paragraphTodo=document.createElement('p')
-    paragraphTodo.textContent=todo.text
-    document.querySelector('body').appendChild(paragraphTodo)
-})
+// todos.forEach(function(todo){
+//     const paragraphTodo=document.createElement('p')
+//     paragraphTodo.textContent=todo.text
+//     document.querySelector('body').appendChild(paragraphTodo)
+// })
 
 
 
