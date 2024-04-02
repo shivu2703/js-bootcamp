@@ -29,6 +29,11 @@ const renderNotes = function(notes,filters){
 
 renderNotes(notes,filters)
 
+document.querySelector('#search-text').addEventListener('input',function(e){
+    filters.searchText=e.target.value
+    renderNotes(notes,filters)
+})
+
 document.querySelector('#create-note').addEventListener('click',function(e){
     e.target.textContent='The button was clicked'
 })
@@ -39,20 +44,4 @@ document.querySelector('#remove-all').addEventListener('click',function(e){
     })
 })
 
-document.querySelector('#search-text').addEventListener('input',function(e){
-    filters.searchText=e.target.value
-    renderNotes(notes,filters)
-})
-// document.querySelector('#search-text').addEventListener('change',function(e){
-//     console.log(e.target.value)
-// })
 
-
-// document.querySelector('button').addEventListener('click',function(e){
-//     e.target.textContent='The button was clicked'  
-
-// })
-
-// document.querySelectorAll('button')[1].addEventListener('click',function(e){
-//     console.log("delete all notes!!")
-// })

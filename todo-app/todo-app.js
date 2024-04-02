@@ -52,23 +52,6 @@ document.querySelector('#search-text').addEventListener('input',function(e){
     renderedTodos(todos,filters)
 })
 
-// todos.forEach(function(todo){
-//     const paragraphTodo=document.createElement('p')
-//     paragraphTodo.textContent=todo.text
-//     document.querySelector('body').appendChild(paragraphTodo)
-// })
-
-
-
-
-// const paragraphs=document.querySelectorAll('p')
-
-// paragraphs.forEach(function(todo){
-//     if(todo.textContent.includes('the')){
-//         todo.remove()
-//     }
-// })
-
 //listen for new todo-creation
 document.querySelector('#add-todo').addEventListener('click',function(e){
     console.log('adding new todo')
