@@ -38,10 +38,8 @@ document.querySelector('#create-note').addEventListener('click',function(e){
     e.target.textContent='The button was clicked'
 })
 
-document.querySelector('#name-form').addEventListener('submit',function(e){
-    e.preventDefault()
-    console.log(e.target.elements.firstName.value)
-    e.target.elements.firstName.value =''
+document.querySelector('#for-fun').addEventListener('change',function(e){
+    console.log(e.target.checked)
 })
 
 
