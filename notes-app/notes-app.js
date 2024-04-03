@@ -13,6 +13,24 @@ const filters={
     searchText: ''
 }
 
+const user={
+    name:'Shivangi',
+    age: 27
+}
+
+const userJson=JSON.stringify(user)
+console.log(userJson)
+localStorage.setItem('user',userJson)
+
+const userJsonString = localStorage.getItem('user')
+const userobject=JSON.parse(userJsonString)
+console.log(`${userobject.name} is ${userobject.age}`)
+
+
+
+
+
+
 //CRUD Operations
 
 // c -> create -> setItem
