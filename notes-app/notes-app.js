@@ -13,6 +13,24 @@ const filters={
     searchText: ''
 }
 
+//CRUD Operations
+
+// c -> create -> setItem
+// localStorage.setItem('location', 'kanpur')
+
+// R-> Read -> getItem
+// console.log(localStorage.getItem('location'))
+
+// u-> update -> setItem
+// localStorage.setItem('name','shivangi')
+
+//  d -> delete -> removeItem
+// localStorage.removeItem('location')
+// localStorage.removeItem('name')
+
+// to delete everthing from local storage - > clear()
+// localStorage.clear()
+
 const renderNotes = function(notes,filters){
     const filteredNotes = notes.filter(function(note){
         return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
