@@ -4,7 +4,7 @@ const filters = {
     searchText: '',
     hideCompleted: false
 }
-
+           
 renderTodos(todos, filters)
 
 document.querySelector('#search-text').addEventListener('input', function (e) {
