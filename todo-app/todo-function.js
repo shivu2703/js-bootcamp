@@ -55,8 +55,7 @@ const generateTodoDOM = function (todo) {
     button.textContent='x'
     todoEL.appendChild(button)
 
-
-    return todoEL
+     return todoEL
 }
 
 // Get the DOM elements for list summary
