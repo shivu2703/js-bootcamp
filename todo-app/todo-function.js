@@ -22,7 +22,6 @@ const renderTodos = function (todos, filters) {
         return searchTextMatch && hideCompletedMatch
     })
 
-
     // debugger
     const incompleteTodos = filteredTodos.filter(function (todo) {
         return !todo.completed
@@ -55,7 +54,7 @@ const generateTodoDOM = function (todo) {
     button.textContent='x'
     todoEL.appendChild(button)
 
-     return todoEL
+    return todoEL
 }
 
 // Get the DOM elements for list summary
