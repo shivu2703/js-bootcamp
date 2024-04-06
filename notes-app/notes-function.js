@@ -34,6 +34,7 @@ const generateNoteDOM = function (note) {
     return noteEl
 }
 
+
 // Render application notes
 const renderNotes = function (notes, filters) {
     const filteredNotes = notes.filter(function (note) {
