@@ -42,11 +42,11 @@ const generateTodoDOM = function (todo) {
     const textEl = document.createElement('span')
     const button = document.createElement('button')
 
-    // set todo checkbox element 
+    // Set todo checkbox element 
     checkBoxEl.setAttribute('type','checkbox')
     todoEL.appendChild(checkBoxEl)
 
-    // set the text element
+    // Set the text element
     textEl.textContent = todo.text
     todoEL.appendChild(textEl)
 
