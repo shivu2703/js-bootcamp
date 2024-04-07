@@ -50,7 +50,7 @@ const generateTodoDOM = function (todo) {
     textEl.textContent = todo.text
     todoEL.appendChild(textEl)
 
-    // set the remove button
+    // Set the remove button
     button.textContent='x'
     todoEL.appendChild(button)
 
