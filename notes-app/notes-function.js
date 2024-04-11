@@ -8,7 +8,6 @@ const getSavedNotes = function () {
         return []
     }
 }
-
 // Save the notes to localStorage
 const saveNotes = function (notes) {
     localStorage.setItem('notes', JSON.stringify(notes))
