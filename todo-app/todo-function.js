@@ -57,6 +57,7 @@ const generateTodoDOM = function (todo) {
     return todoEL
 }
 
+
 // Get the DOM elements for list summary
 const generateSummaryDOM = function (incompleteTodos) {
     const summary = document.createElement('h2')
